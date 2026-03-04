@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import com.github.sarxos.webcam.Webcam;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+
+public class PhotoApp {
+    public static void main(String[] args){
+        //Frame Eigenschaften
+        JFrame frame = new JFrame("PhotoApp") ;
+        frame.setSize(500,500);
+        frame.getContentPane().setBackground(Color.WHITE);
+        frame.setLayout(new FlowLayout());
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        String name = JOptionPane.showInputDialog(frame, "Wie ist Dein Name?");
+        JLabel welcomeLabel = new JLabel("Hello " + name + ", nice to meet you!");
+        welcomeLabel.setFont(new Font("Arial", Font.BOLD, 16));
+        frame.add(welcomeLabel);
+
+        JLabel questionLabel = new JLabel("Möchtest Du ein Photo?");
+        JButton yesButton = new JButton("Ja, gerne!");
+
+
+
+    }
+}
