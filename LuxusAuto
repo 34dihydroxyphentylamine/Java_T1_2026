@@ -1,0 +1,32 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class LuxusAutovermietung2026 {
+
+    public static void main(String[] args) {
+        // Datenbank befüllen
+        Map<String, String> fahrerDatenbank = new HashMap<>();
+        
+        fahrerDatenbank.put("Taylor Swift", "USA-1989-TS");
+        fahrerDatenbank.put("Elon Musk", "MARS-001-X");
+        fahrerDatenbank.put("Apache 207", null); // Bekannt, aber kein Führerschein
+        fahrerDatenbank.put("Zendaya", "LA-90210-Z");
+        fahrerDatenbank.put("Cristiano Ronaldo", "POR-007-CR");
+
+        // Benutzereingabe sammeln
+       
+
+        // Aufruf der Methode
+        ueberpruefeFahrer(fahrerDatenbank, name);
+
+        scanner.close();
+    }
+
+    /**
+     * Diese Methode sucht den Fahrer und fängt mögliche NullPointerExceptions ab.
+     */
+    public static void ueberpruefeFahrer(Map<String, String> datenbank, String name) {
+        
+    }
+}
