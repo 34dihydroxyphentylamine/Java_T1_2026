@@ -1,0 +1,83 @@
+public class ArrayError {
+    public static void access(int index) {
+        int[] data = {10, 20, 30};
+        int result = data[index];
+        System.out.println(result);
+    }
+
+    public static void main(String[] args) {
+        int validIndex = 1;
+        int invalidIndex = 10;
+        
+        access(validIndex);
+        access(invalidIndex);
+    }
+}
+
+
+-----------------------------------------------
+public class MathError {
+    public static void calculate(int value) {
+        int output = 50 / value;
+        System.out.println(output);
+    }
+
+    public static void main(String[] args) {
+        int normalValue = 5;
+        int zeroValue = 0;
+        
+        calculate(normalValue);
+        calculate(zeroValue);
+    }
+}
+
+-------------------------
+
+public class NullError {
+    public static void process(String input) {
+        int length = input.length();
+        System.out.println(length);
+    }
+
+    public static void main(String[] args) {
+        String text = "Java";
+        String empty = null;
+        
+        process(text);
+        process(empty);
+    }
+}
+
+----------------------------------------------
+public class ParseError {
+    public static void transform(String data) {
+        int number = Integer.parseInt(data);
+        System.out.println(number);
+    }
+
+    public static void main(String[] args) {
+        String numeric = "500";
+        String nonNumeric = "Test";
+        
+        transform(numeric);
+        transform(nonNumeric);
+    }
+}
+
+------------------------------------------------------
+public class CastError {
+    public static void handle(Object obj) {
+        Double d = (Double) obj;
+        System.out.println(d);
+    }
+
+    public static void main(String[] args) {
+        Object realDouble = 15.5;
+        Object notADouble = "Hello";
+        
+        handle(realDouble);
+        handle(notADouble);
+    }
+}
+
+----------------------------------------------------
